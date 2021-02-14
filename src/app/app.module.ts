@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import { CountryDetailsComponent } from './country-details/country-details.component';
+import { AddCountryComponent } from './add-country/add-country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountryDetailsComponent
+    CountryDetailsComponent,
+    AddCountryComponent
   ],
   imports: [
     BrowserModule,
