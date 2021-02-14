@@ -6,7 +6,8 @@ import {AddCountryComponent} from './add-country/add-country.component';
 
 const routes: Routes = [
   { path: '', component: CountryDetailsComponent  },//default path
-  { path: 'add/:id', component: AddCountryComponent  }
+  { path: 'add/:id', component: AddCountryComponent  },
+  {path: 'conn', component: CountryDetailsComponent}
 ];
 
 @NgModule({

@@ -18,16 +18,39 @@ export class AddCountryComponent implements OnInit {
               private countryService: CountryDataService) { }
 
   ngOnInit() {
-   /*
-    this.id = this.route.snapshot.params['id'];
-    this.country=new Country(this.id,'','','','',0,'')
 
-    if(this.id!=-1){
-      this.countryService.('in28minutes',this.id).subscribe(
-        data=>this.todo=data
-      )
+    this.id = this.route.snapshot.params['id'];
+    this.country = new Country(this.id,'','','','',0,'')
+
+    if(this.id != -1){
+      this.countryService.retrieveCountry('con',this.id).subscribe(
+        data => this.country = data
+      );
     }
-*/
+
+  }
+
+  saveTodo(){
+    if (this.id == -1) {
+      this.countryService.createCountry('con', this.country)
+        .subscribe(
+          data => {
+            console.log(data)
+            this.router.navigate(['conn']);
+          }
+        )
+
+    }
+    else{
+      this.countryService.updateCountry('con', this.id, this.country)
+        .subscribe(
+          data => {
+            console.log(data)
+            this.router.navigate(['conn']);
+          }
+        )
+    }
+
   }
 
 }
