@@ -1,1 +1,57 @@
-<p>add-country works!</p>
+
+<br><br>
+<div class="container">
+  <H1>Country Details</H1></div>
+
+<div class="container">
+  <div class="alert alert-warning" *ngIf="todoForm.dirty && todoForm.invalid">Enter valid values</div>
+  <div class="alert alert-warning" *ngIf="todoForm.dirty && targetDate.invalid">Enter valid Target Date</div>
+  <div class="alert alert-warning" *ngIf="todoForm.dirty && description.invalid">Enter atleast 5 characters in Description</div>
+
+  <form (ngSubmit)="!todoForm.invalid && saveTodo()" #todoForm="ngForm">
+
+    <fieldset class="form-group">
+      <label>Name</label>
+      <input type="text" #description="ngModel"
+             [(ngModel)]="country.name" class="form-control"
+             name="Name" required="required" minlength="5">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Capital City</label>
+      <input type="text" #description="ngModel"
+             [(ngModel)]="country.capital" class="form-control"
+             name="Category" required="required" minlength="5">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Main Language</label>
+      <input type="text" #descripti="ngModel"
+             [(ngModel)]="country.language" class="form-control"
+             name="qty" required="required">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Currency</label>
+      <input type="text" #descripti="ngModel"
+             [(ngModel)]="country.currency" class="form-control"
+             name="qty" required="required">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Population</label>
+      <input type="text" #descripti="ngModel"
+             [(ngModel)]="country.population" class="form-control"
+             name="qty" required="required">
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>President</label>
+      <input type="text" #descripti="ngModel"
+             [(ngModel)]="country.president" class="form-control"
+             name="qty" required="required">
+    </fieldset>
+
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+</div>

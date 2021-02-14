@@ -16,18 +16,19 @@ export class CountryDataService {
   deleteCountry(username,id){
     return this.http.delete(`http://localhost:8080/rest/v2/jpa/${username}/countries/${id}`);
   }
-/*
+
   retrieveCountry(username,id){
-    return this.http.get<Todo>(`http://localhost:8080/jpa/users/${username}/todos/${id}`);
+    return this.http.get<Country>(`http://localhost:8080/rest/v2/jpa/${username}/countries/${id}`);
   }
 
-  updateCountry(username,id, todo){
-    return this.http.put(`http://localhost:8080/jpa/users/${username}/todos/${id}`,todo);
+  updateCountry(username, id, country){
+    return this.http.put(`http://localhost:8080/rest/v2/jpa/${username}/countries/${id}`, country);
   }
 
-  createCountry(username,todo){
-    return this.http.post(`http://localhost:8080/jpa/users/${username}/todos`,todo);
-  }*/
+  createCountry(username, country){
+    return this.http.post(`http://localhost:8080/rest/v2/jpa/{username}/countries`, country);
+  }
 
 
 }
+
