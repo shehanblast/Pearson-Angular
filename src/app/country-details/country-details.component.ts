@@ -27,9 +27,20 @@ export class CountryDetailsComponent implements OnInit {
   message:string
   name: string
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+              private countryService: CountryDataService) { }
 
   ngOnInit() {
+    this.refreshCountries()
+  }
+
+  refreshCountries(){
+    this.countryService.retrieveAllCountries().subscribe(
+      response => {
+        console.log(response);
+        this.countries = response;
+      }
+    )
   }
 
 }
