@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from "@angular/common/http";
 import { CountryDetailsComponent } from './country-details/country-details.component';
 
 @NgModule({
@@ -12,6 +14,8 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
