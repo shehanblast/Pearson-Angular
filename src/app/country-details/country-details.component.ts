@@ -43,5 +43,24 @@ export class CountryDetailsComponent implements OnInit {
     )
   }
 
+  deleteCountry(id){
+    this.countryService.deleteCountry('con', id).subscribe(
+      response => {
+        console.log(response);
+        this.message = 'Sucessfully deleted!'
+        this.refreshCountries()
+
+      }
+    )
+  }
+
+  updateCountry(id){
+    this.router.navigate(['add',id])
+  }
+
+  addCountry(){
+    this.router.navigate(['add',-1])
+  }
+
 }
 

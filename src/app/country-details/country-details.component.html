@@ -48,8 +48,8 @@
           <td>{{con.currency}}</td>
           <td>{{con.population}}</td>
           <td>{{con.president}}</td>
-          <td><button (click)="updateTodo(todo.id)" class="btn btn-success">Update</button></td>
-          <td><button (click)="deleteTodo(todo.id)" class="btn btn-warning">Delete</button></td>
+          <td><button (click)="updateCountry(con.id)" class="btn btn-success">Update</button></td>
+          <td><button (click)="deleteCountry(con.id)" class="btn btn-warning">Delete</button></td>
 
         </tr>
 
@@ -59,7 +59,7 @@
       </table>
 
       <div class="row">
-        <button (click)="addTodo()" class="btn btn-success">Add</button>&nbsp;
+        <button (click)="addCountry()" class="btn btn-success">Add</button>&nbsp;
 
       </div>
 

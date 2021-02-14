@@ -12,11 +12,11 @@ export class CountryDataService {
   retrieveAllCountries(){
     return this.http.get<Country[]>(`http://localhost:8080/rest/v2/jpa/countries`);
   }
-/*
-  deleteCountry(username,id){
-    return this.http.delete(`http://localhost:8080/jpa/users/${username}/todos/${id}`);
-  }
 
+  deleteCountry(username,id){
+    return this.http.delete(`http://localhost:8080/rest/v2/jpa/${username}/countries/${id}`);
+  }
+/*
   retrieveCountry(username,id){
     return this.http.get<Todo>(`http://localhost:8080/jpa/users/${username}/todos/${id}`);
   }
