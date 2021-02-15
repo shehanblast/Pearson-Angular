@@ -12,13 +12,15 @@ import {MatButtonModule} from '@angular/material';
 import {MatTableModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CountryDetailsComponent,
-    AddCountryComponent
+    AddCountryComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
