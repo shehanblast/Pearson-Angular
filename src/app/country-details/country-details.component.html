@@ -3,7 +3,22 @@
   <div class="col-md-12 text-center">
 
 
-    <br><br><br>
+    <p>
+      <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+    </p>
+
 
 
 
@@ -49,7 +64,7 @@
           <td>{{con.population}}</td>
           <td>{{con.president}}</td>
           <td><button (click)="updateCountry(con.id)" class="btn btn-success">Update</button></td>
-          <td><button (click)="deleteCountry(con.id)" class="btn btn-warning">Delete</button></td>
+          <td><button mat-raised-button color="warn" (click)="deleteCountry(con.id)" >Delete</button></td>
 
         </tr>
 
@@ -59,9 +74,11 @@
       </table>
 
       <div class="row">
-        <button (click)="addCountry()" class="btn btn-success">Add</button>&nbsp;
+        <button mat-raised-button color="primary" (click)="addCountry()">Add</button>&nbsp;
 
       </div>
+
+      <button mat-raised-button color="primary">Primary</button>
 
 
     </div>

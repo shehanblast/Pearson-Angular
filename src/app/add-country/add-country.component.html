@@ -5,8 +5,7 @@
 
 <div class="container">
   <div class="alert alert-warning" *ngIf="todoForm.dirty && todoForm.invalid">Enter valid values</div>
-  <div class="alert alert-warning" *ngIf="todoForm.dirty && targetDate.invalid">Enter valid Target Date</div>
-  <div class="alert alert-warning" *ngIf="todoForm.dirty && description.invalid">Enter atleast 5 characters in Description</div>
+  <div class="alert alert-warning" *ngIf="todoForm.dirty && description.invalid">Enter atleast 2 characters in Description</div>
 
   <form (ngSubmit)="!todoForm.invalid && saveTodo()" #todoForm="ngForm">
 
@@ -14,14 +13,14 @@
       <label>Name</label>
       <input type="text" #description="ngModel"
              [(ngModel)]="country.name" class="form-control"
-             name="Name" required="required" minlength="5">
+             name="Name" required="required" minlength="2">
     </fieldset>
 
     <fieldset class="form-group">
       <label>Capital City</label>
       <input type="text" #description="ngModel"
              [(ngModel)]="country.capital" class="form-control"
-             name="Category" required="required" minlength="5">
+             name="Category" required="required" minlength="2">
     </fieldset>
 
     <fieldset class="form-group">
@@ -35,21 +34,21 @@
       <label>Currency</label>
       <input type="text" #descripti="ngModel"
              [(ngModel)]="country.currency" class="form-control"
-             name="qty" required="required">
+             name="qtys" required="required">
     </fieldset>
 
     <fieldset class="form-group">
       <label>Population</label>
       <input type="text" #descripti="ngModel"
              [(ngModel)]="country.population" class="form-control"
-             name="qty" required="required">
+             name="qtyw" required="required">
     </fieldset>
 
     <fieldset class="form-group">
       <label>President</label>
       <input type="text" #descripti="ngModel"
              [(ngModel)]="country.president" class="form-control"
-             name="qty" required="required">
+             name="qtyk" required="required">
     </fieldset>
 
     <button type="submit" class="btn btn-success">Save</button>

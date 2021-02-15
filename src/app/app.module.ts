@@ -7,6 +7,12 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import { CountryDetailsComponent } from './country-details/country-details.component';
 import { AddCountryComponent } from './add-country/add-country.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material';
+import {MatTableModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material';
+import {MatIconModule} from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +24,12 @@ import { AddCountryComponent } from './add-country/add-country.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    MatButtonModule,
+    AppRoutingModule,
+    MatTableModule,
+    MatIconModule,
+    MatToolbarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
