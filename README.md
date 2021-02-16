@@ -12,18 +12,20 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Install the `npm` packages described in the `package.json` and verify that it works:
 
-## Build
+```bash
+npm install
+np serve
+```
+Shut it down manually with `Ctrl-C`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Packages
 
-## Running unit tests
+```bash
+bootstrap - npm install bootstrap
+Angular Material - ng add @angular/material
+```
+## Contact
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Binuka Sihan Paranagama : https://www.linkedin.com/in/binuka-sihan-paranagama-636831194/
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Project Link : 
