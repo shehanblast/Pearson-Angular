@@ -28,4 +28,4 @@ Angular Material - ng add @angular/material
 
 Binuka Sihan Paranagama : https://www.linkedin.com/in/binuka-sihan-paranagama-636831194/
 
-Project Link : 
+Project Link : https://github.com/shehanblast/Pearson-Angular
