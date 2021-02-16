@@ -1,6 +1,7 @@
 # CountryFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+CountryFront is a Angular frontend Web Application which can perform CRUD(Create,
+Read, Update, Delete) operations of countries details.
 
 ## Get started
 
